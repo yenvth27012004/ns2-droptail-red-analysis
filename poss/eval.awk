@@ -22,7 +22,7 @@ BEGIN {
 }
 END {
     duration = end_time - start_time;
-    print "--- KẾT QUẢ THEO BÀI BÁO ---";
+    print "--- FINAL RESULT ---";
     printf "TCP Throughput: %.2f Kbps\n", (tcp_recv * 8) / (duration * 1024);
     printf "UDP Throughput: %.2f Kbps\n", (udp_recv * 8) / (duration * 1024);
     printf "Tổng số gói bị mất (Packet Loss): %d\n", dropped;
